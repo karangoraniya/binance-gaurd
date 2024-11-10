@@ -1,11 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Binance Guard - NFC-Enabled Wallet Application
+
+This project is a wallet application designed with NFC (Near Field Communication) functionality. It allows users to make secure payments by tapping their device or an NFC card. This setup makes transactions easy and quick while maintaining security.
+
+## Features
+
+- **NFC Activation**: Allows users to activate and use the wallet with a simple NFC tap.
+- **Secure Transactions**: Includes options for biometric authentication or passkey confirmation to enhance security.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Android device with NFC capability, or iOS device with Core NFC support.
+- Blockchain backend with smart contracts ready to handle wallet interactions.
+- Development environment with CMake installed for building cross-platform projects.
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone git@github.com:karangoraniya/binance-gaurd.git
+   cd binance-gaurd
+   ```
+
+2. **Install dependencies**
 
 ```bash
-npm run dev
+npm install
+#
+yarn
+#
+pnpm install
+```
+
+3. **First, run the development server**:
+
+```bash
+     npm run dev
 # or
 yarn dev
 # or
@@ -13,24 +45,3 @@ pnpm dev
 # or
 bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
